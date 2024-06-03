@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Digital Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: #ff9100d3;
+            color: white;
+            padding: 1.5rem 0;
+            text-align: center;
+            
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 1rem 0 0 0;
+           
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;  
+            box-shadow: 0 0 10px rgba(255, 254, 254, 0.459);
+            transition: transform 0.3s;
+        }
+        
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            overflow: hidden;
+            padding: 2rem 0;
+        }
+        #about {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 2rem 0;
+        }
+        #about img {
+            border-radius: 50%;
+            margin-right: 2rem;
+            width: 150px;
+            height: 150px;
+            flex-shrink: 0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        #about-text {
+            max-width: 600px;
+            text-align: left;
+        }
+        #about h2 {
+            margin-top: 0;
+        }
+        #projects, #contact , #skills, #education{
+            padding: 2rem 0;
+        }
+        #projects h2, #contact h2 , #skills h2 ,#education h2{
+            text-align: center;
+            color: #ff9100d3;
+        }
+        .project {
+            border: 1px solid #ddd;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            background: rgba(236, 233, 233, 0.822);
+            box-shadow: 0 0 5px rgba(10, 10, 10, 0.459);
+            transition: transform 0.3s;
+        }
+        .project:hover {
+            transform: translateY(-10px);
+        }
+        .project h3 {
+            margin-top: 0;
+        }
+        .skills{
+            border: 1px solid #ddd;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            background: rgba(236, 233, 233, 0.822);
+            box-shadow: 0 0 5px rgba(10, 10, 10, 0.459);
+            transition: transform 0.3s;
+        }
+        .skills:hover {
+            transform: translateY(-10px);
+        }
+        .skills h3 {
+            margin-top: 0;
+        }
+        .education{
+            border: 1px solid #ddd;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            background: rgba(236, 233, 233, 0.822);
+            box-shadow: 0 0 5px rgba(10, 10, 10, 0.459);
+            transition: transform 0.3s;
+        }
+        .education:hover {
+            transform: translateY(-10px);
+        }
+        .education h3 {
+            margin-top: 0;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #333;
+            color: white;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        form input, form textarea {
+            margin-bottom: 1rem;
+            padding: 0.75rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+        form input[type="submit"] {
+            background: #ff9100d3;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-weight: 600;
+            padding: 1rem;
+            transition: background 0.3s;
+        }
+        form input[type="submit"]:hover {
+            background: #ff9100d3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ravikumar Langade</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <section id="about">
+            <img src="my image.jpg" alt="Ravikumar Langade">
+            <div id="about-text">
+                <h2>About Me</h2>
+                <p>I am electronics engineer form FY B.Tech with 1 years of experience specializing in the design and implementation of electronic circuits</p>
+            </div>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Project 1</h3>
+                <p>Clap Switch Circuit</p>
+            </div>
+            <div class="project">
+                <h3>Project 2</h3>
+                <p>Automatic School Bell Using Arduino</p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills">
+                <p>PCB Designing</p>
+            </div>
+            <div class="skills">
+                <p>Python/C++</p>
+            </div>
+            <div class="skills">
+                <p>Circuit Design</p>
+            </div>
+            <div class="skills">
+                <p>Project Management</p>
+            </div>
+        </section>
+        <section id="education">
+            <h2>Education</h2>
+            <div class="education">
+                <h3>MIT ACADEMY OF ENGGINEERING</h3>
+                <p>B.Tech Electronics Engineering</p>
+                <p>CGPA: 6.56/10</p>
+            </div>
+            <div class="education">
+                <h3>RPAJC  JR.COLLEGE, DUDULGOAN</h3>
+                <p>12TH | MSBSHSE</p>
+                <p>Percentage: 63.67/100</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <form action="mailto: ravikumarlangade3727@gmail.com" method="post" enctype="text/plain">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <input type="submit" value="Send">
+            </form>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Ravikumar Langade</p>
+    </footer>
+</body>
+</html>
